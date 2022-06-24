@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@400;600;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/harlow-solid-italic');
+
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+nav {
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	z-index: 999;
+  background: #ffffff;
+}
+
+label.logo {
+	position: fixed;
+	color: #126c49;
+	font-family: 'Harlow Solid Italic', sans-serif;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 50px;
+}
+
+nav ul {
+	float: right;
+	margin-right: 30px;
+}
+
+nav ul li {
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 80px;
+	margin: 0 20px;
+}
+
+nav ul li a {
+	color: #126c49;
+	font-size: 15px;
+	text-transform: uppercase;
+	padding: 8px 12px;
+}
+
+.checkBtn {
+	font-size: 30px;
+	color: #126c49;
+	float: right;
+	line-height: 80px;
+	margin-right: 45px;
+	cursor: pointer;
+	display: none;
+}
+
+a.active, a:hover, a:focus {
+	text-decoration: none;
+	color: #e88f2b;
+	font-weight: 700;
+	transition: 0.5s;
+}
+
+#sidebar, #cart, #user {
+	display: none;
+}
+
+.login_main{
+	display: flex;
+	justify-content: center;
+}
+
+#closelogin, #closeresetpass{
+	float: right;
+	color: #207B67;
+	cursor: pointer;
+}
+
+.login {
+	max-width: 350px;
+	width: 100%;
+	background-color: #FFF9F3;
+	margin: 120px auto 0 auto;
+	padding: 25px 30px;
+	border-radius: 28px;
+	box-shadow: 0 0 350px rgba(0, 0, 0, 0.7);
+	display: none;
+	position: absolute;
+	left: 0;
+  right: 0;
+	z-index: 999;
+}
+
+.login_logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.lg_heading {
+	font-family: 'Montserrat', sans-serif;
+	font-size:25px;
+	text-align:center;
+	color:#207B67;
+	font-weight: 700;
+	margin-top: 24px;
+}
+
+.lg_subheading {
+	font-size: 12px;
+	margin-bottom: 24px;
+	text-align:center;
+	color:#207B67;
+}
+
+::placeholder {
+	color: #207B67;
+	opacity: 1;
+	font-size:12px;
+}
+
+:-ms-input-placeholder {
+	color: #207B67;
+	font-size:1px;
+}
+
+::-ms-input-placeholder {
+	color: #207B67;
+	font-size:10px;
+}
+
+.lg_useracc {
+	height: 29px;
+	width: 94%;
+	outline: none;
+	font-size: 16px;
+	border-radius: 5px;
+  padding-left: 15px;
+	border: 1px solid #207B67;
+	border-bottom-width: 2px;
+	transition: all 0.3s ease;
+}
+
+#user_email {
+	margin-top: 27px;
+}
+
+#user_pass {
+	margin-top: 16px;
+}
+
+#togglePassword{
+	float: right;
+  margin-left: -25px;
+	margin-top:26px;
+	position: relative;
+	z-index: 2;
+	color:#207B67;
+  cursor: pointer;
+}
+
+.user-pass, #reg_pass {
+	display: flex;
+}
+
+.forgotpass {
+	font-size: 11px;
+	text-align:center;
+  color:#FA8A18;
+	margin-top: 22px;
+	cursor: pointer;
+}
+
+.forgotpass:hover {
+	color: #126c49;
+	font-weight: bold;
+	transition: 0.5s;
+}
+
+.login_button{
+	height: 28px;
+	margin-top: 20px;
+}
+
+.login_button input {
+	width: 98.5%;
+  padding: 5px 35px;
+	border-radius: 40px;
+  font-size: 0.8em;
+  font-weight: 700;
+	border: none;
+	color: #ffffff;
+	cursor: pointer;
+	background: #126c49;
+}
+
+.login_button input:hover {
+  background:#e88f2b;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+#or{
+	overflow: hidden;
+	text-align: center;
+	font-size: 10px;
+	color: #207B67;
+	margin-top: 20px;
+}
+#or:before,
+#or:after {
+	background-color: #207B67;
+	content: "";
+	display: inline-block;
+	height: 1px;
+	position: relative;
+	vertical-align: middle;
+	width: 38%;
+}
+#or:before {
+	right: 2.1em;
+	margin-left: -50%;
+}
+#or:after {
+	left: 1.8em;
+	margin-right: -50%;
+}
+#noacc{
+	margin:18px;
+}
+#register{
+	margin:-8px;
+	cursor: pointer;
+}
+
+u {
+	text-decoration: none;
+	position: relative;
+}
+
+u:after {
+	content: '';
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: -4px;
+	border-width: 0 0 1px;
+	border-style: solid;
+}
+
+#info{
+	font-size: 8px;
+	text-align:center;
+	color:#207B67;
+	margin-top: 37px;
+	margin-bottom: 2px;
+}
+
+#reset {
+	display: none;
+}
+
+#resetpass {
+	margin-top:13px;
+}
+#back {
+	margin-top:38px;
+  cursor: pointer;
+}
+
+.input-login a {
+	text-decoration: underline;
+	color: #e88f2b;
+}
+
+.input-login a:hover {
+	color: #126c49;
+	font-weight: bold;
+}
+
+@media (max-width: 1300px) {
+	nav ul li {
+		margin: 0 4px;
+	}
+
+	nav ul li a {
+		font-size: 16px;
+		padding: 0 4px;
+	}
+}
+
+@media (max-width: 950px) {
+	label.logo {
+		font-size: 25px;
+	}
+
+	nav ul li a {
+		font-size: 13px;
+		padding: 0;
+	}
+}
+
+@media (max-width: 750px) {
+	label.logo {
+		padding: 0 30px;
+	}
+
+	.checkBtn {
+		display: block;
+		font-size: 20px;
+		margin-right: 40px;
+	}
+
+	.checkBtn a {
+		color: #126c49;
+	}
+
+	.checkBtn a.active, .checkBtn a:hover {
+		color: #e88f2b;
+		font-weight: 700;
+		transition: 0.5s;
+	}
+
+	ul {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #126c49;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all 0.5s;
+	}
+
+	nav ul li {
+		display: block;
+		margin: 50px;
+		line-height: 40px;
+	}
+
+	nav ul li a {
+		font-size: 18px;
+		color: #ffffff;
+	}
+
+	.hideIc {
+		display: none;
+	}
+
+	#sidebar:checked ~ ul {
+		left: 0;
+	}
+}
+
+@media (max-width: 450px) {
+	label.logo {
+		font-size: 1em;
+		padding: 0 20px;
+	}
+
+	.checkBtn {
+		font-size: 15px;
+		margin-right: 20px;
+	}
+}

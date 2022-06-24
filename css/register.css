@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Montserrat:wght@300;600;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/harlow-solid-italic');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #126c49;
+}
+
+#register{
+	cursor: pointer;
+}
+
+.reg_title h1 {
+	color: #ffffff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.5em;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+  padding-top: 110px;
+}
+
+.reg_title p {
+	text-align:center;
+	color: #ffffff;
+  font-size: 1.2em;
+}
+
+/* #reset, #register_{
+	display: none;
+} */
+
+.register-cont {
+  max-width: 700px;
+  margin: 70px auto;
+}
+
+.reg_content form .reg-details {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+.reg_title p .highlight {
+  color: #e88f2b;
+  font-weight: 700;
+}
+
+form .reg-details .reg_input-box{
+	margin-bottom: 10px;
+	width: calc(100% / 2 - 20px);
+}
+
+form .reg-details .reg_input-box .address_input {
+  width: calc(100% * 2.2);
+  margin: -15px 0 15px;
+}
+
+form .reg_input-box span.regdetail {
+	display: block;
+  font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+  color: #126c49;
+	margin: 15px auto;
+}
+
+.reg-details .reg_input-box input{
+	height: 30px;
+	width: 94%;
+	outline: none;
+	font-size: 16px;
+	border-radius: 5px;
+	padding-left: 15px;
+	border: 1px solid #126c49;
+	border-bottom-width: 2px;
+	transition: all 0.3s ease;
+}
+
+#reg_content{
+	width: 100%;
+	max-width: 700px;
+	margin-top: -40px;
+	background-color: #FFF9F3;
+	padding: 25px 30px;
+	border-radius: 28px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+#pc{
+	margin-top: -20px;
+}
+
+#togglePassword1, #togglePassword2{
+	float: right;
+	margin-left: -28px;
+	margin-top: 10px;
+	position: relative;
+	z-index: 2;
+	color: #126c49;
+	cursor: pointer;
+}
+
+#reg_checkbox{
+	margin-top: 35px;
+}
+
+#reg_checkbox checkbox{
+  border: #126c49;
+}
+
+.lg_subheading {
+  margin-left: 5px;
+  font-size: 1em;
+}
+
+.reg_checkbox label a {
+  color: #126c49;
+  font-weight: 700;
+}
+
+#user-detail, #login-detail {
+	font-size: 1.2em;
+	color:#126c49;
+	margin-top: 16px;
+	font-weight: 700;
+	margin-bottom: -25px;
+}
+
+.reg_button{
+  max-width: 150px;
+	margin: 20px auto;
+}
+
+.reg_button input {
+  padding: 15px 35px;
+	border-radius: 40px;
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+	border: none;
+	color: #ffffff;
+	cursor: pointer;
+	background: #e88f2b;
+}
+
+.reg_button input:hover {
+  background: #126c49;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.wrapper {
+	text-align: center;
+}
+
+.wrapper footer h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+footer {
+  width: 100%;
+	margin-top: auto;
+  padding: 60px 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8em;
+  background-color: #126c49;
+  color: #ffffff;
+}
+
+.wrapper footer img {
+	width: 150px;
+	margin-top: -30px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin: 0 90px -30px;
+}
+
+.col {
+  width: 15%;
+	margin: 0 auto;
+}
+
+.child {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.email {
+  margin-top: 10px;
+}
+
+.socials {
+  margin-top: 35px;
+}
+
+.socials a {
+  font-size: 30px;
+  color: #ffffff;
+  margin-right: 20px;
+}
+
+.socials a:hover {
+  color: #e88f2b;
+  transition: all 0.5s;
+}
+
+@media (max-width: 1300px) {
+	nav ul li {
+		margin: 0 4px;
+	}
+
+	nav ul li a {
+		font-size: 16px;
+		padding: 0 4px;
+	}
+}
+
+@media (max-width: 950px) {
+	label.logo {
+		font-size: 25px;
+	}
+
+	nav ul li a {
+		font-size: 13px;
+		padding: 0;
+	}
+
+  footer {
+  	padding: 100px 0;
+  }
+
+  .row {
+  	flex-direction: column;
+  	margin: -200px 40px 40px 20px;
+  }
+
+  .col {
+  	width: 50%;
+  	padding-top: 150px;
+  }
+}
+
+@media (max-width: 750px) {
+	.checkBtn {
+		display: block;
+	}
+
+	ul {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #126c49;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all 0.5s;
+	}
+
+	nav ul li {
+		display: block;
+		margin: 50px;
+		line-height: 40px;
+	}
+
+	nav ul li a {
+		font-size: 18px;
+		color: #ffffff;
+	}
+
+	#checkbox:checked ~ ul {
+		left: 0;
+	}
+}

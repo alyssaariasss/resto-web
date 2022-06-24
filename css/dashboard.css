@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Montserrat:wght@300;600;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/harlow-solid-italic');
+
+* {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.home {
+  width: calc(100% - 260px);
+  min-height: calc(100vh - 60px);
+  margin-top: 20px;
+  left: 260px;
+  padding-top: 32px;
+  transition: all 0.5s ease;
+  position: relative;
+  background: #fef9f3;
+}
+
+.main_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar.close ~ .home {
+  left: 78px;
+  width: calc(100% - 78px);
+}
+
+.main_content h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: #e88f2b;
+  margin-bottom: 32px;
+}
+
+.dashboard_card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 80px;
+  margin-bottom: 50px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+  margin-bottom: 24px;
+}
+
+.card_body {
+  padding: 35px 32px;
+  display: flex;
+  align-items: center;
+}
+
+.card_body span i {
+  font-size: 1.5em;
+  color: #126c49;
+  padding-right: 32px;
+}
+
+.card_body h5 {
+  font-family: 'Montserrat', sans-serif;
+  color: #126c49;
+  font-size: 0.8em;
+}
+
+.card_body h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  margin-top: 4px;
+}
+
+.charts {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+  padding: 0 20px 20px 20px;
+}
+
+.charts h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: #126c49;
+  font-size: 1em;
+  text-align: center;
+}
+
+.chart {
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 1115px) {
+  .home {
+    left: 60px;
+    width: calc(100% - 60px);
+  }
+
+  .dashboard_card {
+    grid-column-gap: 20px;
+  }
+
+  .card {
+    margin-bottom: 24px;
+  }
+
+  #doughnutGraph, #lineGraph {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 880px) {
+  .main_content {
+    padding: 32px 32px;
+  }
+
+  .dashboard_card {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    margin-bottom: 24px;
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+  }
+
+  .chart {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  #doughnutGraph {
+    padding: 10px;
+  }
+
+  #doughnut {
+    padding: 0;
+  }
+}

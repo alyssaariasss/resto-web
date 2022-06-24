@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Montserrat:wght@300;600;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/harlow-solid-italic');
+
+* {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* Topbar and Sidebar */
+.topbar {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  background: #ffffff;
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  align-items: center;
+  z-index: 1;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+
+.toggle i {
+  padding: 0 10px;
+  min-width: 60px;
+  font-size: 25px;
+  color: #126c49;
+  cursor: pointer;
+}
+
+.topbar .toggle i:hover {
+  color: #e88f2b;
+  transition: all 0.5s ease;
+}
+
+.logo h2 {
+  font-family: 'Harlow Solid Italic', sans-serif;
+  font-size: 1.3em;
+  color: #126c49;
+}
+
+.user {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.user img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.sidebar {
+  width: 260px;
+  height: 100%;
+  margin-top: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #126c49;
+  z-index: 100;
+  transition: all 0.5s ease;
+}
+
+.sidebar.close {
+  width: 78px;
+}
+
+.sidebar .nav_link {
+  height: 100%;
+  padding: 25px 0 150px 0;
+  overflow: auto;
+}
+
+.sidebar.close .nav_link {
+  overflow: visible;
+}
+
+.sidebar .nav_link::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar .nav_link li {
+  position: relative;
+  list-style: none;
+  transition: all 0.4s ease;
+}
+
+.sidebar .nav_link li:hover {
+  background: #e88f2b;
+}
+
+.sidebar .nav_link li .menu_hover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar.close .nav_link li .menu_hover {
+  display: block;
+}
+
+.sidebar .nav_link li i {
+  min-width: 78px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebar .nav_link li.showMenu i.arrow {
+  transform: rotate(-180deg);
+}
+
+.sidebar.close .nav_link i.arrow {
+  display: none;
+}
+
+.sidebar .nav_link li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.sidebar .nav_link li a .name {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  transition: all 0.4s ease;
+}
+
+.sidebar.close .nav_link li a .name {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar .nav_link li .submenu {
+  padding: 6px 6px 14px 80px;
+  margin-top: -10px;
+  background: #e88f2b;
+  display: none;
+}
+
+.sidebar .nav_link li.showMenu .submenu {
+  display: block;
+}
+
+.sidebar .nav_link li .submenu a {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 5px 0;
+  white-space: nowrap;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.sidebar .nav_link li .submenu a:hover {
+  opacity: 1;
+}
+
+.sidebar.close .nav_link li .submenu {
+  position: absolute;
+  left: 100%;
+  top: -10px;
+  margin-top: 0;
+  padding: 10px 20px;
+  opacity: 0;
+  display: block;
+  pointer-events: none;
+  transition: 0s;
+  border-radius: 0 6px 6px 0;
+}
+
+.sidebar.close .nav_link li:hover .submenu {
+  top: 0;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+}
+
+.sidebar .nav_link li .submenu .name {
+  display: none;
+}
+
+.sidebar.close .nav_link li .submenu .name {
+  font-size: 18px;
+  opacity: 1;
+  display: block;
+}
+
+.sidebar .nav_link li .submenu.blank {
+  opacity: 1;
+  pointer-events: auto;
+  padding: 3px 20px 6px 16px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar .nav_link li:hover .submenu.blank {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 1115px) {
+  .home {
+    left: 60px;
+    width: calc(100% - 60px);
+  }
+
+  .sidebar.close ~ .home {
+    left: 60px;
+    width: calc(100% - 60px);
+  }
+}
+
+@media (max-width: 880px) {
+  .main_content {
+    padding: 32px 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  .topbar {
+    grid-template-columns: 0.8fr 5fr 1fr;
+  }
+
+  .user {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .sidebar.close .nav_link li .submenu{
+    display: none;
+  }
+
+  .logo h2 {
+    font-size: 0.8em;
+  }
+}

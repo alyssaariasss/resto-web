@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;600;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/harlow-solid-italic');
+
+* {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fef9f3;
+}
+
+.content {
+  width: calc(100% - 260px);
+  min-height: calc(100vh - 60px);
+  top: 20px;
+  left: 260px;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+.table_container {
+  padding: 130px 0 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar.close ~ .content {
+  left: 78px;
+  width: calc(100% - 78px);
+}
+
+.title {
+  padding: 25px 30px 0;
+}
+
+.title h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #126c49;
+  margin-bottom: 20px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  background-color: #FAFAFA;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+.table_wrapper {
+  margin: 0 30px 25px 30px;
+}
+
+.table {
+  /* width: 100%; */
+  padding: 20px 0 20px;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  min-width: 400px;
+}
+
+.table th, tr {
+  white-space: nowrap;
+}
+
+.table thead tr {
+  background-color: #126c49;
+  color: #ffffff;
+  border-bottom: 1px solid #dddddd;
+}
+
+.table thead tr th {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.35px;
+  padding: 12px;
+}
+
+.table th, .table td {
+  padding: 12px 15px;
+  line-height: 3;
+  text-align: center;
+  font-weight: 400;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr:nth-of-type(odd) {
+  background-color: #f3f3f3;
+}
+
+.table tbody tr:nth-of-type(even) {
+  background-color: #ffffff;
+}
+
+.table tbody tr:last-of-type {
+  border-bottom: 2px solid #ffffff;
+}
+
+.table button {
+  border: none;
+}
+
+.txtedit {
+  display: none;
+}
+
+.status_txt {
+  color: #126c49;
+  font-weight: 700;
+}
+
+.confirm_btn {
+  background: #e88f2b;
+  color: #ffffff;
+  font-size: 0.8em;
+  font-weight: 700;
+  padding: 6px;
+  text-transform: uppercase;
+  border-radius: 40px;
+}
+
+.confirm_btn:hover {
+  background: #126c49;
+	transition: 0.5s;
+}
+
+.ship_btn {
+  background: #be5b0a;
+  color: #ffffff;
+  font-size: 0.8em;
+  font-weight: 700;
+  padding: 6px 20px;
+  text-transform: uppercase;
+  border-radius: 40px;
+}
+
+.ship_btn:hover {
+  background: #e88f2b;
+	transition: 0.5s;
+}
+
+.complete_btn {
+  background: #126c49;
+  color: #ffffff;
+  font-size: 0.8em;
+  font-weight: 700;
+  padding: 6px;
+  text-transform: uppercase;
+  border-radius: 40px;
+}
+
+.complete_btn:hover {
+  background: #e88f2b;
+	transition: 0.5s;
+}
+
+.delete_btn {
+  background: #be280a;
+  color: #ffffff;
+  font-size: 0.8em;
+  font-weight: 700;
+  padding: 6px;
+  text-transform: uppercase;
+  border-radius: 40px;
+}
+
+.delete_btn:hover {
+  background: #871d08;
+	transition: 0.5s;
+}
+
+@media (max-width: 750px) {
+  .content {
+    width: 100%;
+  }
+
+  .sidebar.close ~ .content {
+    width: 100%;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table, .table tbody, .table tr, .table td {
+    display: block;
+  }
+
+  .table tr {
+    margin-bottom: 15px;
+  }
+
+  .view_btn, .delete_btn {
+    font-size: 0.6em;
+  }
+}

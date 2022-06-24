@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@400;600;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/harlow-solid-italic');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.res_wrapper {
+  height: auto;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/nacar.jpg');
+  background-repeat:no-repeat;
+  background-size: 100%;
+}
+
+.popup_wrapper {
+  display: none;
+}
+
+#tr {
+  text-align: center;
+  font-size: 35px;
+  color: #126c49;
+  font-weight: bold;
+}
+
+#tr_subtittle {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.t_reservation {
+  max-width: 700px;
+  width: 100%;
+  background-color: #FFF9F3;
+  padding: 25px 30px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+.t_reservation .tr_title {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.t_reservation .tr_title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+}
+
+.tr_content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .user-details .tr_input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+form .tr_input-box span.details {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.tr_input-box input {
+  height: 35px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #126c49;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details, .details{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #126c49;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.tr_people{
+  margin-top: -11px;
+}
+
+.tr_dropdown {
+  height: 35px;
+  margin: 11px 0;
+  font-size: 8px;
+  position: relative;
+}
+
+.tr_select option{
+  border: #126c49;
+  font-size: 0.9em;
+  color: #126c49;
+}
+
+.tr_select {
+  padding: 0px 3px 3px 15px;
+  height: 35px;
+  outline: none;
+  border: 1px solid #126c49;
+  border-radius: 5px;
+  border-bottom-width: 2px;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+select.tr_select {
+  background-image:linear-gradient(45deg, transparent 50%, gray 50%),
+  linear-gradient(135deg, gray 50%, transparent 50%),
+  linear-gradient(to right, #126c49, #126c49);
+  background-position:
+  calc(100% - 20px) calc(1em - 11px),
+  calc(100% - 15px) calc(1em - 11px),
+  calc(100% - 1.5em) 0em;
+  background-size:
+  5px 5px,
+  5px 5px,
+  1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+.btn_area {
+  width: 200px;
+  margin: 30px auto 10px;
+}
+
+.btn_area input{
+  width: 100%;
+  height: 45px;
+  border: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background: #e88f2b;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 40px;
+}
+
+.btn_area input:hover {
+  background: #126c49;
+	transition: 0.5s;
+}
+
+.wrapper {
+	text-align: center;
+}
+
+.wrapper footer h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+footer {
+  width: 100%;
+	margin-top: auto;
+  padding: 50px 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8em;
+  background-color: #126c49;
+  color: #ffffff;
+}
+
+.wrapper footer img {
+	width: 150px;
+	margin-top: -30px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin: 0 90px -30px;
+}
+
+.col {
+  width: 15%;
+	margin: 0 auto;
+}
+
+.child {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.email {
+  margin-top: 10px;
+}
+
+.socials {
+  margin-top: 35px;
+}
+
+.socials a {
+  font-size: 30px;
+  color: #ffffff;
+  margin-right: 20px;
+}
+
+.socials a:hover {
+  color: #e88f2b;
+  transition: all 0.5s;
+}
+
+@media (max-width: 1300px) {
+	nav ul li {
+		margin: 0 4px;
+	}
+
+	nav ul li a {
+		font-size: 16px;
+		padding: 0 4px;
+	}
+}
+
+@media (max-width: 950px) {
+	label.logo {
+		font-size: 25px;
+	}
+
+	nav ul li a {
+		font-size: 13px;
+		padding: 0;
+	}
+
+  footer {
+  	padding: 100px 0;
+  }
+
+  .row {
+  	flex-direction: column;
+  	margin: -200px 40px 40px 20px;
+  }
+
+  .col {
+  	width: 50%;
+  	padding-top: 150px;
+  }
+}
+
+@media (max-width: 750px) {
+	.checkBtn {
+		display: block;
+	}
+
+	ul {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #126c49;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all 0.5s;
+	}
+
+	nav ul li {
+		display: block;
+		margin: 50px;
+		line-height: 40px;
+	}
+
+	nav ul li a {
+		font-size: 18px;
+		color: #ffffff;
+	}
+
+	#checkbox:checked ~ ul {
+		left: 0;
+	}
+}
+
+@media(max-width: 584px){
+  .t_reservation {
+   max-width: 100%;
+ }
+
+ .tr_input-box {
+   margin-bottom: 15px;
+   width: 100%;
+ }
+
+ .category{
+   width: 100%;
+ }
+
+ .user-details{
+   max-height: 300px;
+ }
+
+ .user-details::-webkit-scrollbar{
+   width: 5px;
+ }
+}

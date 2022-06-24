@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Montserrat:wght@300;600;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/harlow-solid-italic');
+
+* {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fef9f3;
+}
+
+.content {
+  width: calc(100% - 260px);
+  min-height: calc(100vh - 60px);
+  top: 60px;
+  left: 260px;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+.table_container {
+  height: auto;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar.close ~ .content {
+  left: 78px;
+  width: calc(100% - 78px);
+}
+
+.popup_wrapper {
+  display: none;
+}
+
+.title {
+  padding: 25px 30px;
+}
+
+.title h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #126c49;
+  margin-bottom: 20px;
+}
+
+.title p {
+  margin-top: -10px;
+}
+
+.wrapper {
+  max-width: 850px;
+  width: 100%;
+  background-color: #FAFAFA;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+.table {
+  background-color: #ffffff;
+  border-top: 1px solid #d4d4d4;
+}
+
+.table_content {
+  padding: 0 30px;
+}
+
+.input_box {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.input_box input, .input_box select {
+  width: 100%;
+  height: 35px;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #126c49;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+input[type="file"] {
+  padding: 5px;
+}
+
+input[type="number"] {
+  padding-right: 5px;
+}
+
+.input_box p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #126c49;
+  margin: 10px 0 10px;
+}
+
+.btn_area {
+  width: 100%;
+  background-color: #FAFAFA;
+  border-top: 1px solid #d4d4d4;
+}
+
+.btn_area input{
+  width: 200px;
+  height: 45px;
+  margin: 10px 30px 10px 30px;
+  border: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background: #e88f2b;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 40px;
+}
+
+.btn_area input:hover {
+  background: #126c49;
+	transition: 0.5s;
+}
+
+.input_box i {
+  float: right;
+  margin-top: -30px;
+  font-size: 20px;
+  color: #126c49;
+  cursor: pointer;
+}
+
+.input_box i:hover {
+  color: #e88f2b;
+  transition: 0.5s;
+}
+
+.input_box select option {
+  font-size: 1.2em;
+  color: #126c49;
+}
+
+.popup_wrapper, .popup_content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+.popup_content {
+  width: 500px;
+  height: 220px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+.popup_content i {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  font-size: 20px;
+  color: #126c49;
+  cursor: pointer;
+}
+
+.popup_content i:hover {
+  color: #e88f2b;
+  transition: 0.5s;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  margin-top: -10px;
+  bottom: 20px;
+  background-color: #dddddd;
+}
+
+.subtitle {
+  padding: 20px 30px;
+}
+
+.subtitle p {
+  margin-bottom: 10px;
+}
